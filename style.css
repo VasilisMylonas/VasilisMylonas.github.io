@@ -119,14 +119,6 @@
     transition: filter 0.5s ease-in-out;
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-    grid-column: var(--grid-column);
-    grid-row: var(--grid-row);
-}
-
 .hero-graphic {
     grid-area: hero-graphic;
     display: flex;
@@ -145,6 +137,13 @@
     justify-content: center;
     align-items: center;
     font-size: 0.75rem;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .hero-content {
+        font-size: 5vw;
+    }
 }
 
 @media (min-width: 600px) {
